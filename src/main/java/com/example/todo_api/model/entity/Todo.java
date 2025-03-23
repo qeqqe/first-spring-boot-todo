@@ -15,8 +15,8 @@ import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "todos")
-@Data
 @NoArgsConstructor
+@Data
 @AllArgsConstructor
 public class Todo {
 
@@ -32,8 +32,7 @@ public class Todo {
     private String description;
 
     private boolean completed = false;
-
+    
     private LocalDateTime createdAt = LocalDateTime.now();
-
     private LocalDateTime updatedAt = LocalDateTime.now();
 }
